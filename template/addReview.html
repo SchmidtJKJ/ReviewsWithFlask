@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Review</title>
+</head>
+<body>
+<h3>Write a review</h3>
+<form action="{{ url_for('saveReview') }}" method="POST">
+<label>Username</label> <input type="=text" name="Username" placeholder="username"> <br>
+<label>Movie</label> <input type="=text" name="Movie" placeholder="Name name"> <br>
+<label>Acting</label> <input type="=text" name="Acting" placeholder="Acting rating"> <br>
+<label>Images</label> <input type="=text" name="Image" placeholder="Image rating"> <br>
+<label>Story</label> <input type="=text" name="Story" placeholder="Story rating"> <br>
+<label>Box Office</label> <input type="=text" name="BoxOffice" placeholder="Box Office rating"> <br>
+<label>Overall</label> <input type="=text" name="Rating" placeholder="Overall rating"> <br>
+<label>Comment</label> <textarea name="Comment" placeholder="enter your comment"></textarea>
+<input type="submit" value="submit">Submit</input>
+</form>
+<br>
+<br>
+<a href="/">Home</a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Reviews</title>
+</head>
+<body>
+<h3>See Reviews for a Movie</h3>
+<form action="{{ url_for('getReview')}}" method="POST">
+<label>Name</label> <input type="text" name="movie" placeholder="enter the name of a movie"><br>
+    <br>
+<input type="submit" value="submit">Search</input>
+</form>
+<br>
+<a href="/">Home</a>
+</body>
+</html>
